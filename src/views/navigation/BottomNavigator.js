@@ -70,7 +70,7 @@ export default function BottomNavigator ({navigation}) {
           ),
         }}
       />
-            <Tab.Screen
+      <Tab.Screen
         name='LocalMall'
         component={HomeScreen}
         options={{
