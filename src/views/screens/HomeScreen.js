@@ -40,36 +40,36 @@ export default function HomeScreen () {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
 
-    <View style={style.mainHeader}>
-      <MaterialCommunityIcons name="ghost-off" size={26} color="black" />
-      <Text style={style.text}>Bookountable</Text>
-    </View>
-
-      <View style={style.header}>
-        <View>
-          <View style={{flexDirection: 'row'}}>
-            <Text style={{fontSize: 22}}>Welcome,</Text>
-            <Text style={{fontSize: 22, fontWeight: 'bold', marginLeft: 10}}>Octavio</Text>
-          </View>
-          <Text style={{marginTop: 5, marginBottom: 15, fontSize: 16, color: 'grey'}}>
-            What are you reading today?
-          </Text>
-        </View>
-        <Image source={require('../../assets/me.jpg')} style={{height: 40, width: 40, borderRadius: 25}} />
+      <View style={style.mainHeader}>
+        <MaterialCommunityIcons name="ghost-off" size={26} color="black" />
+        <Text style={style.text}>Bookountable</Text>
       </View>
-      <FlatList
-        data={books}
-        renderItem={({item}) => <BookList item={item} deleteBook={deleteBook}/>}
-      />
-      {/* <View style={{marginTop: 40, flexDirection: 'row', paddinHorizontal: 20}}>
-        <View style={style.inputContainer}>
-          <Icon name='search' size={24}/>
-          <TextInput style={{flex: 1, fontSize: 18}} placeholder='Search Book..'/>
+
+        <View style={style.header}>
+          <View>
+            <View style={{flexDirection: 'row'}}>
+              <Text style={{fontSize: 22}}>Welcome,</Text>
+              <Text style={{fontSize: 22, fontWeight: 'bold', marginLeft: 10}}>Octavio</Text>
+            </View>
+            <Text style={{marginTop: 5, marginBottom: 15, fontSize: 16, color: 'grey'}}>
+              What are you reading today?
+            </Text>
+          </View>
+          <Image source={require('../../assets/me.jpg')} style={{height: 40, width: 40, borderRadius: 25}} />
         </View>
-        <View style={style.sortBtn}>
-          <Icon name='tune' size={28} color='white' />
-        </View>
-      </View> */}
+        <FlatList
+          data={books}
+          renderItem={({item}) => <BookList item={item} deleteBook={deleteBook}/>}
+        />
+        {/* <View style={{marginTop: 40, flexDirection: 'row', paddinHorizontal: 20}}>
+          <View style={style.inputContainer}>
+            <Icon name='search' size={24}/>
+            <TextInput style={{flex: 1, fontSize: 18}} placeholder='Search Book..'/>
+          </View>
+          <View style={style.sortBtn}>
+            <Icon name='tune' size={28} color='white' />
+          </View>
+        </View> */}
 
     </SafeAreaView>
   )

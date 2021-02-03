@@ -82,3 +82,5 @@ export default function BottomNavigator ({navigation}) {
     </Tab.Navigator>
   )
 };
+
+// Only the home Tab.Screen is visible. For some reason the others are not showing up on the app. Are they showing up the the web app? Maybe it has to do with styles, formatting, syntax error?
