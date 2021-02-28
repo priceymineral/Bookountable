@@ -92,7 +92,8 @@ const style = StyleSheet.create({
     textDecorationLine: 'underline',
   },
   signupContainer: {
-    flexDirection: 'row',
+    alignItems: 'center',
+    // flexDirection: 'row',
   },
   // indicatorContainer: {
   //   height: 50,
